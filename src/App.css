@@ -1,36 +1,30 @@
-/* App.css */
 
-/* Main container for the slider */
 .slider-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 100vh; 
   overflow: hidden;
-  background-color: #000; /* Optional: Background color for the slider */
+  background-color: #000;
 }
 
-/* Wrapper to enable smooth transition between slides */
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
 
-/* Styles for individual slides */
 .slide {
   min-width: 100%;
-  height: 100vh; /* Full screen height */
+  height: 100vh; 
   background-size: cover;
   background-position: center;
 }
 
-/* Ensure images fill the slide area */
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Navigation buttons for previous and next slides */
 button {
   position: absolute;
   top: 50%;
@@ -52,13 +46,12 @@ button.next {
   right: 20px;
 }
 
-/* Mobile responsive styles */
 @media (max-width: 768px) {
   .slider-container {
-    height: 70vh; /* Adjust height for smaller screens */
+    height: 70vh; 
   }
 
   button {
-    font-size: 1.5rem; /* Smaller buttons for mobile */
+    font-size: 1.5rem; 
   }
 }
