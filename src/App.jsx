@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css"; // Import CSS for styling
+import "./App.css"; 
 
 const App = () => {
   const images = [
@@ -12,16 +12,15 @@ const App = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatic image transition every 3 seconds
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change every 3 seconds
+    }, 3000); 
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval); 
   }, [images.length]);
 
-  // Manual next and previous navigation
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
